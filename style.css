@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'gilroy';
+    color: #fff;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+#main{
+    height: 85%;
+    width: 100%;
+    background-color: #111;
+    display: flex;
+    padding: 5vw 10vw;
+}
+
+#left{
+    border-radius: 5px;
+    height: 100%;
+    width: 45%;
+    background-color: #333;
+    background-size: cover;
+    background-position:  top;
+}
+
+#right{
+    height: 100%;
+    width: 55%;
+    /* background-color: blue; */
+    padding: 0 3vw;
+    margin-bottom: -3px;
+    overflow: auto;
+}
+
+#right::-webkit-scrollbar{
+    display: none;
+}
+
+#right h3{
+    font-size: 35px;
+}
+
+#all-song{
+    height: 85%;
+    margin-top: 30px;
+}
+
+.song-cart{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid #5a5a5a;
+    padding: 15px 10px;
+}
+
+.song-cart:hover{
+    background-color: #444;
+}
+
+.song-cart:nth-last-child(1){
+    border-bottom: 1px solid #5a5a5a;
+}
+
+.song-cart .Part1{
+    display: flex;
+    justify-content: center;
+    pointer-events: none;
+}
+
+.song-cart img{
+    height: 55px;
+    width: 55px;
+    margin-right: 20px;
+}
+
+.song-cart h2{
+    font-size: 20px;
+    align-items: center;
+    font-weight: 600;
+}
+
+.song-cart h6{
+    font-size: 16px;
+    
+}
+
+#player{
+    height: 15%;
+    width: 100%;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+#player h3{
+    background-color: rgba(31, 30, 30, 0.938);
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+#player h3 i{
+    font-size: 24px;
+}
+
+#player h3:active{
+    opacity: 0.5;
+    scale: 0.92;
+}
+
+.play-bar {
+    width: 30%;
+    height: 10px;
+    background-color: #f0f0f0;
+    border-radius: 15px;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  
+  .progress-bar {
+    width: 0%;
+    height: 100%;
+    border-radius: 100px;
+    background-color: #1db954;
+    transition: width 0.1s ease-in-out;
+  }
+  
